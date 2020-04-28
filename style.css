@@ -1,0 +1,83 @@
+@viewport {
+    width: device-width;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:479px) {
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+.container-fluid {
+    min-height: 100vh;
+    transition: all .5s ease-in-out;
+    font-family: 'EB Garamond', serif;
+}
+
+#quote-box {
+    display: table;
+    height: auto;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto;
+    border-radius: .5rem;
+}
+
+@media screen and (max-width:480px) {
+    #quote-box {
+        width: 70vw;
+    }
+}
+
+#text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#author {
+    text-align: right;
+    height: auto;
+    font-style: italic;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.buttons {
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+    clear: right;
+}
+
+#new-quote {
+    float: right;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+#tweet-quote {
+    font-size: 1.5rem;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+#new-quote:hover,
+#tweet-quote:hover {
+    opacity: .9;
+}
